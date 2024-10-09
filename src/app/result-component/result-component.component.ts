@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-result-component',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './result-component.component.html',
   styleUrl: './result-component.component.css'
 })
-export class ResultComponentComponent {
+export class ResultComponentComponent  implements OnInit{
+  ngOnInit(): void {
+    localStorage.clear()
+  }
 
 }

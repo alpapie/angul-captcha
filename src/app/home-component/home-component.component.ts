@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponentComponent implements OnChanges,OnInit {
   currentStage = 1
+
   constructor(private router: Router) { }
   ngOnInit(): void {
     let curr=localStorage.getItem("currentStage")
@@ -36,7 +37,7 @@ export class HomeComponentComponent implements OnChanges,OnInit {
     console.log(localStorage.getItem("currentStage"));
     if (this.currentStage > 4) {
       this.router.navigate(["/result"])
-      localStorage.clear()
+      this.currentStage=1
       return 
     }
   }

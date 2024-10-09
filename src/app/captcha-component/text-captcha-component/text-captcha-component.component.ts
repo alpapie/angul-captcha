@@ -33,6 +33,8 @@ export class TextCaptchaComponentComponent implements OnInit  {
   }
 
   check(result:string){
+    console.log(result);
+    
     if (!(result==this.captcha)) {
       this.error="Captch does not match"
       return
