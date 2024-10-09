@@ -1,0 +1,14 @@
+<h3>Faites pivoter l'image pour la mettre à l'endroit</h3>
+<h2 id="status" style="color: #ee7e6a;">{{error}}</h2>
+    
+<div class="image-container">
+  <button class="rotate-btn" (click)="rotateLeft()">&#x21e6;</button>
+  
+  <img [src]="rotateImage.url" [style.transform]="'rotate(' + rotation + 'deg)'" alt="Captcha Image" class="captcha-image">
+  
+  <button class="rotate-btn" (click)="rotateRight()">&#x21e8;</button>
+</div>
+<button class="btn-ckeck "  (click)="check()">Valider</button>
+
+
+

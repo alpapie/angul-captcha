@@ -1,0 +1,13 @@
+<div class="wrapper"></div>
+<h2 id="status" style="color: #ee7e6a;">{{error}}</h2>
+<div>
+    <input type="text" readonly id="generated-captcha" [value]="ops">
+    <input
+    #input
+    type="text" id="entered-captcha" (paste)="false"  placeholder="result">
+</div>
+<button 
+    
+    type="button" (click)="check(input.value)">
+    check
+</button>

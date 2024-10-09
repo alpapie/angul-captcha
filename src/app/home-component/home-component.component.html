@@ -1,0 +1,25 @@
+<body>
+    <button class="back-button" (click)="goBack()">
+        &#8592; Back
+      </button>
+    
+
+    @switch (currentStage) {
+    @case (1) {
+    <app-text-captcha-component   [currentStage]="currentStage"
+      (stageChange)="updateStage($event)"/>
+    }
+    @case (2) {
+    <app-rotate-captcha-component   [currentStage]="currentStage"
+      (stageChange)="updateStage($event)"/>
+    }
+    @case (3) {
+    <app-math-captcha-component   [currentStage]="currentStage"
+      (stageChange)="updateStage($event)"/>
+    }
+    @case (4) {
+    <app-click-captcha-component   [currentStage]="currentStage"
+      (stageChange)="updateStage($event)"/>
+    }
+    }
+</body>

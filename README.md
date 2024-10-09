@@ -1,27 +1,76 @@
-# AngulIt
+# Angul-It: Multi-Stage Captcha Web Application
+![Angul-It demo](./public/demo/demo.gif)
+## Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Angul-It is a sophisticated multi-stage captcha web application built using the latest version of Angular. It challenges users with various types of captchas, including image identification, math problems, and text input. The application features robust form validation, state management, and a results page.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Multiple captcha challenges
+- Ability to revisit previous stages
+- Form validation for each challenge
+- State management to preserve user progress
+- Results page showing challenge outcomes
+- Responsive design for desktop and mobile
+- Animations for smooth transitions between challenges
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Angular CLI (latest version)
 
-## Build
+## Setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
+   ```
+   git clone https://github.com/alpapie/angul-it.git
+   cd angul-it
+   ```
 
-## Running unit tests
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Start the development server:
+   ```
+   ng serve 
+   ```
 
-## Running end-to-end tests
+4. Open your browser and navigate to `http://localhost:4200`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project Structure
 
-## Further help
+```
+├── app.component.html
+├── app.component.ts
+├── app.config.ts
+├── app.routes.ts
+├── captcha-component/
+│   ├── click-captcha-component/
+│   ├── math-captcha-component/
+│   ├── rotate-captcha-component/
+│   └── text-captcha-component/
+├── home-component/
+├── not-fund-component/
+└── result-component/
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Usage
+
+1. Start from the home page 
+2. Complete each captcha challenge as presented
+3. Navigate between challenges using the provided controls
+4. View your results on the final page after completing all challenges
+
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature-branch-name`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-branch-name`
+5. Submit a pull request
+
+

@@ -1,0 +1,44 @@
+.captcha-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .image-grid {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-image: url('/captcha-image/captcha-composite.jpg');
+    background-size: cover;
+  }
+  
+
+  .image-section {
+    position: absolute;
+    width: 33.33%;
+    height: 33.33%;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+  
+  .image-section:hover {
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
+  }
+  
+  .image-section.clicked {
+    box-shadow: inset 0 0 0 4px #ee7e6a;
+    z-index: 1;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    outline: none;
+    background-color: #64f394;
+  }

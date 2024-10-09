@@ -1,0 +1,21 @@
+<div class="captcha-container">
+    <h2>Captcha de vérification</h2>
+    <p>Cliquez sur l'image de : <strong>{{ targetSection?.name }}</strong></p>
+    <h2 id="status" style="color: #ee7e6a;">{{error}}</h2>
+    <div class="image-grid">
+        @for (section of imageSections; track section.name) {
+            <div 
+              class="image-section" 
+              [class.clicked]="section.isClicked"
+              [style.top.%]="section.top"
+              [style.left.%]="section.left"
+              (click)="onSectionClick(section.name)">
+            </div>
+          }
+    </div>
+    <button 
+    (click)="check()"
+    type="button">
+    check
+</button>
+  </div>

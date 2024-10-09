@@ -1,0 +1,54 @@
+.btn-ckeck {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    outline: none;
+    background-color: #64f394;
+    margin: 0 12px 0 0;
+  }
+
+  .rotate-captcha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+  
+  .captcha-image {
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s ease;
+    margin: 30px;
+  }
+  
+  .rotate-btn {
+    background-color:  #ee7e6a;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+  }
+  
+  .rotate-btn:hover {
+    background-color: #0056b3;
+  }
