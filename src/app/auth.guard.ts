@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { HomeComponentComponent } from './home-component/home-component.component'; // This is a service where you track the challenge completion status
 
 @Injectable({
   providedIn: 'root',
